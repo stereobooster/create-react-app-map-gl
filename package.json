@@ -1,0 +1,20 @@
+{
+  "name": "react-map-gl-test1",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "mapbox-gl": "^0.36.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-map-gl": "https://github.com/uber/react-map-gl.git"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
