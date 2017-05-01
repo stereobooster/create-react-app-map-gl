@@ -1,3 +1,5 @@
+Webpack 2, react-map-gl 3 git
+
 To reproduce bug
 
 ```
