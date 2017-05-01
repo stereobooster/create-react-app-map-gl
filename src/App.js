@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 // import mapboxgl from 'mapbox-gl/dist/mapbox-gl-dev';
 
-import MapGL from 'react-map-gl/dist-es6/index.js'
+// do not use import MapGL from 'react-map-gl/dist-es6/index.js'
+// because this is Webpack 1
+import MapGL from 'react-map-gl'
+
 // import MapGL from 'react-map-gl/src/index.js'
 // import MapGL from 'mapbox-gl/dist/mapbox-gl';
 // import { default as Marker } from './components/Marker';
