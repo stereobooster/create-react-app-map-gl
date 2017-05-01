@@ -9,7 +9,7 @@
     "react-map-gl": "https://github.com/uber/react-map-gl.git"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "react-scripts": "canary"
   },
   "scripts": {
     "start": "react-scripts start",
