@@ -1,3 +1,5 @@
+Webpack 1, react-map-gl 3 git
+
 To reproduce bug
 
 ```
@@ -5,7 +7,6 @@ yarn install
 cd node_modules/react-map-gl/
 yarn install
 npm run build-es5
-npm run build-es6
 npm run postinstall
 cd ../..
 yarn start
