@@ -1,11 +1,10 @@
+Webpack 2, react-map-gl 3 beta
+
 To reproduce bug
 
 ```
 yarn install
 cd node_modules/react-map-gl/
-yarn install
-npm run build-es5
-npm run build-es6
 npm run postinstall
 cd ../..
 yarn start
@@ -14,82 +13,39 @@ yarn start
 Error:
 
 ```
-TypeError: Cannot convert undefined or null to object
-▼ 38 stack frames were expanded.
-new module.exports
-http://localhost:3000/static/js/bundle.js:89620:28
-(anonymous function)
-http://localhost:3000/static/js/bundle.js:83903:46
-__webpack_require__
-http://localhost:3000/static/js/bundle.js:660:30
-fn
-http://localhost:3000/static/js/bundle.js:84:20
-Object.module.exports.name
-http://localhost:3000/static/js/bundle.js:84654:19
-__webpack_require__
-http://localhost:3000/static/js/bundle.js:660:30
-fn
-http://localhost:3000/static/js/bundle.js:84:20
-Object.simplexFont.
-http://localhost:3000/static/js/bundle.js:72874:20
-__webpack_require__
-http://localhost:3000/static/js/bundle.js:660:30
-fn
-http://localhost:3000/static/js/bundle.js:84:20
-(anonymous function)
-http://localhost:3000/static/js/bundle.js:34731:23
-__webpack_require__
-http://localhost:3000/static/js/bundle.js:660:30
-fn
-http://localhost:3000/static/js/bundle.js:84:20
-(anonymous function)
-http://localhost:3000/static/js/bundle.js:81596:15
-__webpack_require__
-http://localhost:3000/static/js/bundle.js:660:30
-fn
-http://localhost:3000/static/js/bundle.js:84:20
-(anonymous function)
-http://localhost:3000/static/js/bundle.js:18010:16
-__webpack_require__
-http://localhost:3000/static/js/bundle.js:660:30
-fn
-http://localhost:3000/static/js/bundle.js:84:20
-(anonymous function)
-http://localhost:3000/static/js/bundle.js:27800:14
-__webpack_require__
-http://localhost:3000/static/js/bundle.js:660:30
-fn
-http://localhost:3000/static/js/bundle.js:84:20
-Object.emptyObject
-http://localhost:3000/static/js/bundle.js:20581:70
-__webpack_require__
-http://localhost:3000/static/js/bundle.js:660:30
-fn
-http://localhost:3000/static/js/bundle.js:84:20
-(anonymous function)
-http://localhost:3000/static/js/bundle.js:59443:86
-__webpack_require__
-http://localhost:3000/static/js/bundle.js:660:30
-fn
-http://localhost:3000/static/js/bundle.js:84:20
-(anonymous function)
-http://localhost:3000/static/js/bundle.js:43029:14
-__webpack_require__
-http://localhost:3000/static/js/bundle.js:660:30
-fn
-http://localhost:3000/static/js/bundle.js:84:20
-(anonymous function)
-http://localhost:3000/static/js/bundle.js:40769:12
-__webpack_require__
-http://localhost:3000/static/js/bundle.js:660:30
-fn
-http://localhost:3000/static/js/bundle.js:84:20
-(anonymous function)
-http://localhost:3000/static/js/bundle.js:98894:18
-__webpack_require__
-http://localhost:3000/static/js/bundle.js:660:30
-(anonymous function)
-http://localhost:3000/static/js/bundle.js:709:39
-(anonymous function)
-http://localhost:3000/static/js/bundle.js:712:10
+Uncaught Error: Module parse failed: /node_modules/react-map-gl/node_modules/mapbox-gl/js/util/util.js Unexpected token (15:35)
+You may need an appropriate loader to handle this file type.
+|  * @private
+|  */
+| exports.easeCubicInOut = function(t: number): number {
+|     if (t <= 0) return 0;
+|     if (t >= 1) return 1;
+    at Object.validateFormat (bootstrap b9b7d1b…:708)
+    at __webpack_require__ (bootstrap b9b7d1b…:659)
+    at fn (bootstrap b9b7d1b…:83)
+    at Object.<anonymous> (map.js:3)
+    at __webpack_require__ (bootstrap b9b7d1b…:659)
+    at fn (bootstrap b9b7d1b…:83)
+    at Object.<anonymous> (mapbox-gl.js:11)
+    at __webpack_require__ (bootstrap b9b7d1b…:659)
+    at fn (bootstrap b9b7d1b…:83)
+    at Object.defineProperty.value (static-map.js:65)
+    at __webpack_require__ (bootstrap b9b7d1b…:659)
+    at fn (bootstrap b9b7d1b…:83)
+    at Object.defineProperty.value (interactive-map.js:15)
+    at __webpack_require__ (bootstrap b9b7d1b…:659)
+    at fn (bootstrap b9b7d1b…:83)
+    at Object.defineProperty.value (index.js:7)
+    at __webpack_require__ (bootstrap b9b7d1b…:659)
+    at fn (bootstrap b9b7d1b…:83)
+    at Object.<anonymous> (App.js:4)
+    at __webpack_require__ (bootstrap b9b7d1b…:659)
+    at fn (bootstrap b9b7d1b…:83)
+    at Object.<anonymous> (index.js:3)
+    at __webpack_require__ (bootstrap b9b7d1b…:659)
+    at fn (bootstrap b9b7d1b…:83)
+    at Object.<anonymous> (index.umd.js:89)
+    at __webpack_require__ (bootstrap b9b7d1b…:659)
+    at validateFormat (bootstrap b9b7d1b…:708)
+    at bootstrap b9b7d1b…:708
 ```

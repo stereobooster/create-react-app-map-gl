@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 // import mapboxgl from 'mapbox-gl/dist/mapbox-gl-dev';
 
-import MapGL from 'react-map-gl/dist-es6/index.js'
+import MapGL from 'react-map-gl'
 // import MapGL from 'react-map-gl/src/index.js'
 // import MapGL from 'mapbox-gl/dist/mapbox-gl';
 // import { default as Marker } from './components/Marker';

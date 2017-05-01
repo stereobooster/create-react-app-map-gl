@@ -6,7 +6,7 @@
     "mapbox-gl": "^0.36.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-map-gl": "https://github.com/uber/react-map-gl.git"
+    "react-map-gl": "beta"
   },
   "devDependencies": {
     "react-scripts": "canary"
