@@ -7,7 +7,7 @@
     "mapbox-gl": "^0.36.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-map-gl": "2"
+    "react-map-gl": "https://github.com/stereobooster/react-map-gl.git#2.0-mapbox-gl-es6"
   },
   "devDependencies": {
     "react-scripts": "canary"
